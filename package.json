@@ -1,0 +1,39 @@
+{
+    "name": "schoolproject",
+    "version": "1.0.0",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server",
+        "server": "nodemon server",
+        "client": "npm start --prefix client",
+        "dev": "concurrently \"npm run server\" \"npm run client\" ",
+        "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "aws-sdk": "^2.794.0",
+        "axios": "^0.20.0",
+        "axis": "^1.0.0",
+        "bcryptjs": "^2.4.3",
+        "concurrently": "^5.3.0",
+        "config": "^3.3.2",
+        "express": "^4.17.1",
+        "express-fileupload": "^1.2.0",
+        "express-validator": "^6.6.1",
+        "gridfs-stream": "^1.1.1",
+        "jsonwebtoken": "^8.5.1",
+        "mkdirp": "^1.0.4",
+        "mongoose": "^5.10.9",
+        "multer": "^1.4.2",
+        "multer-gridfs-storage": "^4.2.0",
+        "multer-s3": "^2.9.0",
+        "nodemon": "^2.0.6",
+        "request": "^2.88.2",
+        "socket.io": "^2.3.0",
+        "uuid": "^3.4.0"
+    },
+    "description": ""
+    
+}
